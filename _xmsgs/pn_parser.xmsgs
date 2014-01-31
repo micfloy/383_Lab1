@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated   -->
+<!--     by the Xilinx ISE software.  Any direct editing or        -->
+<!--     changes made to this file may result in unpredictable     -->
+<!--     behavior or data corruption.  It is strongly advised that -->
+<!--     users do not edit the contents of this file.              -->
+<!--                                                               -->
+<!-- Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.    -->
+
+<messages>
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/.Xilinx/VGA_Driver/TDMS_encoder.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/.Xilinx/VGA_Driver/atlys_lab_video.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/.Xilinx/VGA_Driver/dvid.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/.Xilinx/VGA_Driver/h_sync_gen.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">C:/.Xilinx/VGA_Driver/h_sync_gen.vhd</arg>&quot; Line <arg fmt="%d" index="2">47</arg>. <arg fmt="%s" index="3">Syntax error near &quot;-&quot;.</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/.Xilinx/VGA_Driver/pixel_gen.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/.Xilinx/VGA_Driver/v_sync_gen.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/.Xilinx/VGA_Driver/vga_sync.vhd&quot; into library work</arg>
+</msg>
+
+</messages>
+
