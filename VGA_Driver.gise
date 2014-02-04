@@ -25,6 +25,7 @@
     <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/xst.xmsgs"/>
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="h_sync_gen.prj"/>
     <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="h_sync_gen.stx"/>
+    <file xil_pn:fileType="FILE_VERILOG_INSTTEMPLATE" xil_pn:name="h_sync_gen.tfi"/>
     <file xil_pn:fileType="FILE_XST" xil_pn:name="h_sync_gen.xst"/>
     <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xst"/>
   </files>

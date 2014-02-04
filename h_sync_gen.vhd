@@ -160,7 +160,11 @@ begin
 				end case;
 			end process;
 					
-
+	-- Outputs 				
+	h_sync <= h_sync_buf_reg;
+	blank <= blank_buf_reg;
+	completed <= completed_buf_reg;
+	column <= column_buf_reg;
 
 end look_ahead_buffer_arch;
 
