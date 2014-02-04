@@ -22,7 +22,7 @@ use IEEE.STD_LOGIC_1164.ALL;
 
 -- Uncomment the following library declaration if using
 -- arithmetic functions with Signed or Unsigned values
---use IEEE.NUMERIC_STD.ALL;
+use IEEE.NUMERIC_STD.ALL;
 
 -- Uncomment the following library declaration if instantiating
 -- any Xilinx primitives in this code.
@@ -41,10 +41,45 @@ entity vga_sync is
      );
 end vga_sync;
 
-architecture Behavioral of vga_sync is
+architecture moore of vga_sync is
+
+signal h_sync_con, h_comp_con, v_sync_con, v_comp_con, h_blank, v_blank : std_logic;
+signal row_con, column_con : unsigned;
 
 begin
 
 
-end Behavioral;
+	v_sync_inst: work.v_sync_gen(moore)
+		port map(
+			clk => clk,
+			reset => reset,
+			h_completed => h_comp_con,
+			v_sync => v_sync_con,
+			blank => v_blank,
+			completed => v_comp_con,
+			row => row_con
+		);
+		
+	h_sync_inst: work.h_sync_gen(moore)
+		port map( 
+			clk => clk,
+			reset => reset,
+			h_sync => h_sync_con,
+         blank => h_blank,
+         completed => h_comp_con,
+         column => column_con
+     );
+	  
+	-- Outputs
+	h_sync <= h_sync_con;
+	v_sync <= v_sync_con;
+	v_completed <= v_comp_con;
+	blank <= ;
+   row <= row_con;
+   column <= column_con;  
+	
+		
+
+
+end moore;
 

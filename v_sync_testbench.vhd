@@ -2,15 +2,15 @@
 -- Company: 
 -- Engineer:
 --
--- Create Date:   16:10:48 02/01/2014
+-- Create Date:   13:06:28 02/04/2014
 -- Design Name:   
--- Module Name:   C:/.Xilinx/VGA_Driver/h_sync_test.vhd
+-- Module Name:   C:/.Xilinx/VGA_Driver/v_sync_testbench.vhd
 -- Project Name:  VGA_Driver
 -- Target Device:  
 -- Tool versions:  
 -- Description:   
 -- 
--- VHDL Test Bench Created by ISE for module: h_sync_gen
+-- VHDL Test Bench Created by ISE for module: v_sync_gen
 -- 
 -- Dependencies:
 -- 
@@ -32,21 +32,22 @@ USE ieee.std_logic_1164.ALL;
 -- arithmetic functions with Signed or Unsigned values
 USE ieee.numeric_std.ALL;
  
-ENTITY h_sync_test IS
-END h_sync_test;
+ENTITY v_sync_testbench IS
+END v_sync_testbench;
  
-ARCHITECTURE behavior OF h_sync_test IS 
+ARCHITECTURE behavior OF v_sync_testbench IS 
  
     -- Component Declaration for the Unit Under Test (UUT)
  
-    COMPONENT h_sync_gen
+    COMPONENT v_sync_gen
     PORT(
          clk : IN  std_logic;
          reset : IN  std_logic;
-         h_sync : OUT  std_logic;
+         h_completed : IN  std_logic;
+         v_sync : OUT  std_logic;
          blank : OUT  std_logic;
          completed : OUT  std_logic;
-         column : OUT  unsigned(10 downto 0)
+         row : OUT  unsigned(10 downto 0)
         );
     END COMPONENT;
     
@@ -54,12 +55,13 @@ ARCHITECTURE behavior OF h_sync_test IS
    --Inputs
    signal clk : std_logic := '0';
    signal reset : std_logic := '0';
+   signal h_completed : std_logic := '0';
 
  	--Outputs
-   signal h_sync : std_logic;
+   signal v_sync : std_logic;
    signal blank : std_logic;
    signal completed : std_logic;
-   signal column : unsigned(10 downto 0);
+   signal row : unsigned(10 downto 0);
 
    -- Clock period definitions
    constant clk_period : time := 10 ns;
@@ -67,13 +69,14 @@ ARCHITECTURE behavior OF h_sync_test IS
 BEGIN
  
 	-- Instantiate the Unit Under Test (UUT)
-   uut: h_sync_gen PORT MAP (
+   uut: v_sync_gen PORT MAP (
           clk => clk,
           reset => reset,
-          h_sync => h_sync,
+          h_completed => h_completed,
+          v_sync => v_sync,
           blank => blank,
           completed => completed,
-          column => column
+          row => row
         );
 
    -- Clock process definitions
@@ -90,9 +93,14 @@ BEGIN
    stim_proc: process
    begin		
       -- hold reset state for 100 ns.
-		reset <= '1';
-      wait for 100 ns;		
 		reset <= '0';
+      wait for 100 ns;
+			
+		reset <= '1';
+		h_completed <= '1';
+
+      wait for clk_period*10;
+
       -- insert stimulus here 
 
       wait;

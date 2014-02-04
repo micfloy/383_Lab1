@@ -1,0 +1,10 @@
+Command line:
+   h_sync_test_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  57887
+
+Tue Feb 04 13:26:35 2014
+
+
+ Elaboration Time: 0.0936 sec

@@ -5,5 +5,17 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
+<msg type="error" file="HDLCompiler" num="104" delta="new" >"C:\.Xilinx\VGA_Driver\vga_sync.vhd" Line 52: Cannot find &lt;<arg fmt="%s" index="1">v_sync_gen</arg>&gt; in library &lt;<arg fmt="%s" index="2">work</arg>&gt;. Please ensure that the library was compiled, and that a library and a use clause are present in the VHDL file.
+</msg>
+
+<msg type="error" file="HDLCompiler" num="104" delta="new" >"C:\.Xilinx\VGA_Driver\vga_sync.vhd" Line 63: Cannot find &lt;<arg fmt="%s" index="1">h_sync_gen</arg>&gt; in library &lt;<arg fmt="%s" index="2">work</arg>&gt;. Please ensure that the library was compiled, and that a library and a use clause are present in the VHDL file.
+</msg>
+
+<msg type="error" file="HDLCompiler" num="806" delta="new" >"C:\.Xilinx\VGA_Driver\vga_sync.vhd" Line 77: Syntax error near &quot;<arg fmt="%s" index="1">;</arg>&quot;.
+</msg>
+
+<msg type="error" file="HDLCompiler" num="854" delta="new" >"C:\.Xilinx\VGA_Driver\vga_sync.vhd" Line 44: Unit &lt;<arg fmt="%s" index="1">moore</arg>&gt; ignored due to previous errors.
+</msg>
+
 </messages>
 

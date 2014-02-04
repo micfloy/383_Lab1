@@ -1,0 +1,15 @@
+
+
+
+// Instantiate the module
+v_sync_gen instance_name (
+    .clk(clk), 
+    .reset(reset), 
+    .h_completed(h_completed), 
+    .v_sync(v_sync), 
+    .blank(blank), 
+    .completed(completed), 
+    .row(row)
+    );
+
+

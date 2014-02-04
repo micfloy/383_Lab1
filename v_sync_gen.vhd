@@ -97,23 +97,23 @@ begin
 		
 		case state_reg is
 			when a_video =>
-				if count_reg = "00111100000" then
+				if count_reg = 480 then
 					state_next <= f_porch;
 				end if;
 			when f_porch =>
-				if count_reg = "00000001010" then
+				if count_reg = 10 then
 					state_next <= sync_pulse;
 				end if;
 			when sync_pulse =>
-				if count_reg = "00000000010" then
+				if count_reg = 2 then
 					state_next <= b_porch;
 				end if;
 			when b_porch =>
-				if count_reg = "00000100000" then
+				if count_reg = 32 then
 					state_next <= completed_state;
 				end if;
 			when completed_state =>
-				if count_reg = "00000000001" then
+				if count_reg = 1 then
 					state_next <= a_video;
 				end if;
 		end case;
