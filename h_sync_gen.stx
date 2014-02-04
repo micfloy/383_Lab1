@@ -3,14 +3,14 @@ Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
 --> Parameter TMPDIR set to C:/.Xilinx/VGA_Driver/xst/projnav.tmp
 
 
-Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.68 secs
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.17 secs
  
 --> Parameter xsthdpdir set to C:/.Xilinx/VGA_Driver/xst
 
 
-Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.69 secs
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.17 secs
  
 --> Reading design: h_sync_gen.prj
 
@@ -41,15 +41,17 @@ TABLE OF CONTENTS
 =========================================================================
 Parsing VHDL file "C:\.Xilinx\VGA_Driver\h_sync_gen.vhd" into library work
 Parsing entity <h_sync_gen>.
-Parsing architecture <Behavioral> of entity <h_sync_gen>.
-ERROR:HDLCompiler:806 - "C:\.Xilinx\VGA_Driver\h_sync_gen.vhd" Line 47: Syntax error near "-".
-ERROR:HDLCompiler:854 - "C:\.Xilinx\VGA_Driver\h_sync_gen.vhd" Line 42: Unit <behavioral> ignored due to previous errors.
-VHDL file C:\.Xilinx\VGA_Driver\h_sync_gen.vhd ignored due to errors
+Parsing architecture <look_ahead_buffer_arch> of entity <h_sync_gen>.
+
+
+Total REAL time to Xst completion: 5.00 secs
+Total CPU time to Xst completion: 4.26 secs
+ 
 --> 
 
 Total memory usage is 182276 kilobytes
 
-Number of errors   :    2 (   0 filtered)
+Number of errors   :    0 (   0 filtered)
 Number of warnings :    0 (   0 filtered)
 Number of infos    :    0 (   0 filtered)
 
