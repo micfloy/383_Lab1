@@ -4,13 +4,13 @@ Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.19 secs
+Total CPU time to Xst completion: 0.18 secs
  
 --> Parameter xsthdpdir set to C:/.Xilinx/VGA_Driver/xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.19 secs
+Total CPU time to Xst completion: 0.18 secs
  
 --> Reading design: v_sync_gen.prj
 
@@ -41,32 +41,17 @@ TABLE OF CONTENTS
 =========================================================================
 Parsing VHDL file "C:\.Xilinx\VGA_Driver\v_sync_gen.vhd" into library work
 Parsing entity <v_sync_gen>.
-ERROR:HDLCompiler:69 - "C:\.Xilinx\VGA_Driver\v_sync_gen.vhd" Line 39: <unsigned> is not declared.
-ERROR:HDLCompiler:854 - "C:\.Xilinx\VGA_Driver\v_sync_gen.vhd" Line 32: Unit <v_sync_gen> ignored due to previous errors.
 Parsing architecture <moore> of entity <v_sync_gen>.
-ERROR:HDLCompiler:374 - "C:\.Xilinx\VGA_Driver\v_sync_gen.vhd" Line 43: Entity <v_sync_gen> is not yet compiled.
-ERROR:HDLCompiler:69 - "C:\.Xilinx\VGA_Driver\v_sync_gen.vhd" Line 48: <unsigned> is not declared.
-ERROR:HDLCompiler:69 - "C:\.Xilinx\VGA_Driver\v_sync_gen.vhd" Line 50: <std_logic> is not declared.
-ERROR:HDLCompiler:69 - "C:\.Xilinx\VGA_Driver\v_sync_gen.vhd" Line 58: <rising_edge> is not declared.
-ERROR:HDLCompiler:69 - "C:\.Xilinx\VGA_Driver\v_sync_gen.vhd" Line 56: <reset> is not declared.
-ERROR:HDLCompiler:69 - "C:\.Xilinx\VGA_Driver\v_sync_gen.vhd" Line 54: <clk> is not declared.
-ERROR:HDLCompiler:69 - "C:\.Xilinx\VGA_Driver\v_sync_gen.vhd" Line 66: <count_reg> is not declared.
-ERROR:HDLCompiler:69 - "C:\.Xilinx\VGA_Driver\v_sync_gen.vhd" Line 68: <count_reg> is not declared.
-ERROR:HDLCompiler:69 - "C:\.Xilinx\VGA_Driver\v_sync_gen.vhd" Line 67: <rising_edge> is not declared.
-ERROR:HDLCompiler:69 - "C:\.Xilinx\VGA_Driver\v_sync_gen.vhd" Line 65: <reset> is not declared.
-ERROR:HDLCompiler:69 - "C:\.Xilinx\VGA_Driver\v_sync_gen.vhd" Line 63: <clk> is not declared.
-ERROR:HDLCompiler:69 - "C:\.Xilinx\VGA_Driver\v_sync_gen.vhd" Line 76: <v_sync_buf_reg> is not declared.
-ERROR:HDLCompiler:69 - "C:\.Xilinx\VGA_Driver\v_sync_gen.vhd" Line 77: <blank_buf_reg> is not declared.
-ERROR:HDLCompiler:69 - "C:\.Xilinx\VGA_Driver\v_sync_gen.vhd" Line 78: <completed_buf_reg> is not declared.
-ERROR:HDLCompiler:69 - "C:\.Xilinx\VGA_Driver\v_sync_gen.vhd" Line 79: <row_buf_reg> is not declared.
-ERROR:HDLCompiler:69 - "C:\.Xilinx\VGA_Driver\v_sync_gen.vhd" Line 81: <v_sync_buf_reg> is not declared.
-ERROR:HDLCompiler:69 - "C:\.Xilinx\VGA_Driver\v_sync_gen.vhd" Line 82: <blank_buf_reg> is not declared.
-Sorry, too many errors..
+
+
+Total REAL time to Xst completion: 4.00 secs
+Total CPU time to Xst completion: 4.25 secs
+ 
 --> 
 
-Total memory usage is 180548 kilobytes
+Total memory usage is 182212 kilobytes
 
-Number of errors   :   19 (   0 filtered)
+Number of errors   :    0 (   0 filtered)
 Number of warnings :    0 (   0 filtered)
 Number of infos    :    0 (   0 filtered)
 
