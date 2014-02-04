@@ -55,7 +55,7 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1391549908" xil_pn:in_ck="-8478611991568652752" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1391549908">
+    <transform xil_pn:end_ts="1391552199" xil_pn:in_ck="-8478611991568652752" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1391552199">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="TDMS_encoder.vhd"/>
@@ -80,7 +80,7 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1391549908" xil_pn:in_ck="-8478611991568652752" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1391549908">
+    <transform xil_pn:end_ts="1391552199" xil_pn:in_ck="-8478611991568652752" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1391552199">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="TDMS_encoder.vhd"/>
@@ -93,11 +93,9 @@
       <outfile xil_pn:name="v_sync_testbench.vhd"/>
       <outfile xil_pn:name="vga_sync.vhd"/>
     </transform>
-    <transform xil_pn:end_ts="1391549913" xil_pn:in_ck="-8478611991568652752" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="2934065180872760056" xil_pn:start_ts="1391549908">
+    <transform xil_pn:end_ts="1391552203" xil_pn:in_ck="-8478611991568652752" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="2934065180872760056" xil_pn:start_ts="1391552199">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="fuse.log"/>
       <outfile xil_pn:name="isim"/>
       <outfile xil_pn:name="isim.log"/>
@@ -105,7 +103,7 @@
       <outfile xil_pn:name="v_sync_testbench_isim_beh.exe"/>
       <outfile xil_pn:name="xilinxsim.ini"/>
     </transform>
-    <transform xil_pn:end_ts="1391550262" xil_pn:in_ck="-1389322404267836525" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="-3568228927626861925" xil_pn:start_ts="1391550262">
+    <transform xil_pn:end_ts="1391552204" xil_pn:in_ck="-1389322404267836525" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="-3568228927626861925" xil_pn:start_ts="1391552203">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="isim.cmd"/>

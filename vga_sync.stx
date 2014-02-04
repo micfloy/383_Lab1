@@ -3,14 +3,14 @@ Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
 --> Parameter TMPDIR set to C:/.Xilinx/VGA_Driver/xst/projnav.tmp
 
 
-Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.17 secs
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.18 secs
  
 --> Parameter xsthdpdir set to C:/.Xilinx/VGA_Driver/xst
 
 
-Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.17 secs
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.18 secs
  
 --> Reading design: vga_sync.prj
 
@@ -39,19 +39,25 @@ TABLE OF CONTENTS
 =========================================================================
 *                          HDL Parsing                                  *
 =========================================================================
+Parsing VHDL file "C:\.Xilinx\VGA_Driver\v_sync_gen.vhd" into library work
+Parsing entity <v_sync_gen>.
+Parsing architecture <moore> of entity <v_sync_gen>.
+Parsing VHDL file "C:\.Xilinx\VGA_Driver\h_sync_gen.vhd" into library work
+Parsing entity <h_sync_gen>.
+Parsing architecture <moore> of entity <h_sync_gen>.
 Parsing VHDL file "C:\.Xilinx\VGA_Driver\vga_sync.vhd" into library work
 Parsing entity <vga_sync>.
 Parsing architecture <moore> of entity <vga_sync>.
-ERROR:HDLCompiler:104 - "C:\.Xilinx\VGA_Driver\vga_sync.vhd" Line 52: Cannot find <v_sync_gen> in library <work>. Please ensure that the library was compiled, and that a library and a use clause are present in the VHDL file.
-ERROR:HDLCompiler:104 - "C:\.Xilinx\VGA_Driver\vga_sync.vhd" Line 63: Cannot find <h_sync_gen> in library <work>. Please ensure that the library was compiled, and that a library and a use clause are present in the VHDL file.
-ERROR:HDLCompiler:806 - "C:\.Xilinx\VGA_Driver\vga_sync.vhd" Line 77: Syntax error near ";".
-ERROR:HDLCompiler:854 - "C:\.Xilinx\VGA_Driver\vga_sync.vhd" Line 44: Unit <moore> ignored due to previous errors.
-VHDL file C:\.Xilinx\VGA_Driver\vga_sync.vhd ignored due to errors
+
+
+Total REAL time to Xst completion: 5.00 secs
+Total CPU time to Xst completion: 4.21 secs
+ 
 --> 
 
 Total memory usage is 181572 kilobytes
 
-Number of errors   :    4 (   0 filtered)
+Number of errors   :    0 (   0 filtered)
 Number of warnings :    0 (   0 filtered)
 Number of infos    :    0 (   0 filtered)
 

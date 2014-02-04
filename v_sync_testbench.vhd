@@ -93,10 +93,10 @@ BEGIN
    stim_proc: process
    begin		
       -- hold reset state for 100 ns.
-		reset <= '0';
+		reset <= '1';
       wait for 100 ns;
 			
-		reset <= '1';
+		reset <= '0';
 		h_completed <= '1';
 
       wait for clk_period*10;

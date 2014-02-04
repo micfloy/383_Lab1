@@ -72,14 +72,9 @@ begin
 	end process;
 	
 	-- output buffer
-	process(clk, reset)
+	process(clk)
 	begin
-		if (reset='1') then
-			v_sync_buf_reg <= '0';
-			blank_buf_reg <= '0';
-			completed_buf_reg <= '0';
-			row_buf_reg <= (others => '0');
-		elsif (rising_edge(clk)) then
+		if (rising_edge(clk)) then
 			v_sync_buf_reg <= v_sync_next;
 			blank_buf_reg <= blank_next;
 			completed_buf_reg <= completed_next;
@@ -94,7 +89,6 @@ begin
 	-- next-state logic
 	process(state_reg, count_reg)
 	begin
-	
 		state_next <= state_reg;
 		
 		case state_reg is
@@ -126,6 +120,7 @@ begin
 		blank_next <= '0';
 		completed_next <= '0';
 		row_next <= (others => '0');
+		
 		case state_next is
 		
 			when a_video =>
@@ -135,7 +130,6 @@ begin
 			when f_porch =>
 				v_sync_next <= '1';
 				blank_next <= '1';
-
 				
 			when sync_pulse =>
 
@@ -157,8 +151,5 @@ begin
 	blank <= blank_buf_reg;
 	completed <= completed_buf_reg;
 	row <= row_buf_reg;
-
-
-
+	
 end moore;
-

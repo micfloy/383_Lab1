@@ -49,7 +49,7 @@ signal row_con, column_con : unsigned;
 begin
 
 
-	v_sync_inst: work.v_sync_gen(moore)
+	v_sync_inst: entity work.v_sync_gen(moore)
 		port map(
 			clk => clk,
 			reset => reset,
@@ -60,7 +60,7 @@ begin
 			row => row_con
 		);
 		
-	h_sync_inst: work.h_sync_gen(moore)
+	h_sync_inst: entity work.h_sync_gen(moore)
 		port map( 
 			clk => clk,
 			reset => reset,
@@ -74,7 +74,7 @@ begin
 	h_sync <= h_sync_con;
 	v_sync <= v_sync_con;
 	v_completed <= v_comp_con;
-	blank <= ;
+	blank <= v_blank or h_blank;
    row <= row_con;
    column <= column_con;  
 	

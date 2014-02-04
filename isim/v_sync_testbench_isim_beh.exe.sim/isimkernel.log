@@ -2,12 +2,12 @@ Command line:
    v_sync_testbench_isim_beh.exe
      -simmode  gui
      -simrunnum  0
-     -socket  58361
+     -socket  58575
 
-Tue Feb 04 14:44:25 2014
+Tue Feb 04 15:16:47 2014
 
 
- Elaboration Time: 0.0936 sec
+ Elaboration Time: 0.109202 sec
 
  Current Memory Usage: 826.548 Meg
 
@@ -20,9 +20,9 @@ Tue Feb 04 14:44:25 2014
  Total Traceable Variables  : 14
  Total Scalar Nets and Variables : 553
 
- Total Simulation Time: 0.187201 sec
+ Total Simulation Time: 0.124802 sec
 
  Current Memory Usage: 1141.12 Meg
 
-Tue Feb 04 14:45:33 2014
+Tue Feb 04 15:18:02 2014
 
