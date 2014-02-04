@@ -1,19 +1,19 @@
-Running: C:\Xilinx\14.4\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib secureip -o C:/.Xilinx/VGA_Driver/h_sync_test_isim_beh.exe -prj C:/.Xilinx/VGA_Driver/h_sync_test_beh.prj work.h_sync_test 
+Running: C:\Xilinx\14.4\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib secureip -o C:/.Xilinx/VGA_Driver/v_sync_testbench_isim_beh.exe -prj C:/.Xilinx/VGA_Driver/v_sync_testbench_beh.prj work.v_sync_testbench 
 ISim P.49d (signature 0x7708f090)
 Number of CPUs detected in this system: 4
 Turning on mult-threading, number of parallel sub-compilation jobs: 8 
 Determining compilation order of HDL files
-Parsing VHDL file "C:/.Xilinx/VGA_Driver/h_sync_gen.vhd" into library work
-Parsing VHDL file "C:/.Xilinx/VGA_Driver/h_sync_test.vhd" into library work
+Parsing VHDL file "C:/.Xilinx/VGA_Driver/v_sync_gen.vhd" into library work
+Parsing VHDL file "C:/.Xilinx/VGA_Driver/v_sync_testbench.vhd" into library work
 Starting static elaboration
 Completed static elaboration
 Compiling package standard
 Compiling package std_logic_1164
 Compiling package numeric_std
-Compiling architecture moore of entity h_sync_gen [h_sync_gen_default]
-Compiling architecture behavior of entity h_sync_test
+Compiling architecture moore of entity v_sync_gen [v_sync_gen_default]
+Compiling architecture behavior of entity v_sync_testbench
 Time Resolution for simulation is 1ps.
 Compiled 6 VHDL Units
-Built simulation executable C:/.Xilinx/VGA_Driver/h_sync_test_isim_beh.exe
-Fuse Memory Usage: 35008 KB
-Fuse CPU Usage: 655 ms
+Built simulation executable C:/.Xilinx/VGA_Driver/v_sync_testbench_isim_beh.exe
+Fuse Memory Usage: 35064 KB
+Fuse CPU Usage: 701 ms

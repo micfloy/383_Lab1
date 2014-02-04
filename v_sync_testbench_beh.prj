@@ -1,0 +1,2 @@
+vhdl work "v_sync_gen.vhd"
+vhdl work "v_sync_testbench.vhd"

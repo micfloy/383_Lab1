@@ -1,1 +1,1 @@
--intstyle "ise" -incremental -lib "secureip" -o "C:/.Xilinx/VGA_Driver/h_sync_test_isim_beh.exe" -prj "C:/.Xilinx/VGA_Driver/h_sync_test_beh.prj" "work.h_sync_test" 
+-intstyle "ise" -incremental -lib "secureip" -o "C:/.Xilinx/VGA_Driver/v_sync_testbench_isim_beh.exe" -prj "C:/.Xilinx/VGA_Driver/v_sync_testbench_beh.prj" "work.v_sync_testbench" 
