@@ -4,13 +4,13 @@ Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.17 secs
+Total CPU time to Xst completion: 0.18 secs
  
 --> Parameter xsthdpdir set to C:/.Xilinx/VGA_Driver/xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.17 secs
+Total CPU time to Xst completion: 0.18 secs
  
 --> Reading design: h_sync_gen.prj
 
@@ -41,15 +41,15 @@ TABLE OF CONTENTS
 =========================================================================
 Parsing VHDL file "C:\.Xilinx\VGA_Driver\h_sync_gen.vhd" into library work
 Parsing entity <h_sync_gen>.
-Parsing architecture <look_ahead_buffer_arch> of entity <h_sync_gen>.
+Parsing architecture <moore> of entity <h_sync_gen>.
 
 
 Total REAL time to Xst completion: 4.00 secs
-Total CPU time to Xst completion: 4.13 secs
+Total CPU time to Xst completion: 4.20 secs
  
 --> 
 
-Total memory usage is 182340 kilobytes
+Total memory usage is 181572 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :    0 (   0 filtered)

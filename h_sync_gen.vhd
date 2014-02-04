@@ -39,7 +39,7 @@ entity h_sync_gen is
      );
 end h_sync_gen;
 
-architecture look_ahead_buffer_arch of h_sync_gen is
+architecture moore of h_sync_gen is
 	type h_sync_state is
 		(a_video, f_porch, sync_pulse, b_porch, completed_state);
 	signal state_reg, state_next : h_sync_state;	
@@ -53,7 +53,7 @@ begin
 	begin
 		if (reset='1') then
 			state_reg <= a_video;
-		elsif (clk'event and clk='1') then
+		elsif (rising_edge(clk)) then
 			state_reg <= state_next;
 		end if;
 	end process;
@@ -62,7 +62,7 @@ begin
 	begin
 		if(reset='1') then
 			count_reg <= (others => '0');
-		elsif (clk'event and clk='1') then
+		elsif (rising_edge(clk)) then
 			count_reg <= count_next;
 		end if;
 	end process;
@@ -75,7 +75,7 @@ begin
 			blank_buf_reg <= '0';
 			completed_buf_reg <= '0';
 			column_buf_reg <= (others => '0');
-		elsif (clk'event and clk='1') then
+		elsif (rising_edge(clk)) then
 			h_sync_buf_reg <= h_sync_next;
 			blank_buf_reg <= blank_next;
 			completed_buf_reg <= completed_next;
@@ -89,76 +89,68 @@ begin
 	-- next-state logic
 	process(state_reg, count_reg)
 	begin
-		case state_reg is
+	
+		state_next <= state_reg;
 		
+		case state_reg is
 			when a_video =>
 				if count_reg = "01010000000" then
 					state_next <= f_porch;
-				else
-					state_next <= a_video;
 				end if;
 			when f_porch =>
 				if count_reg = "00000010000" then
 					state_next <= sync_pulse;
-				else
-					state_next <= f_porch;
 				end if;
 			when sync_pulse =>
 				if count_reg = "00001100000" then
 					state_next <= b_porch;
-				else
-					state_next <= sync_pulse;
 				end if;
 			when b_porch =>
 				if count_reg = "00000101111" then
 					state_next <= completed_state;
-				else
-					state_next <= b_porch;
 				end if;
 			when completed_state =>
-				if count_reg = "00000110000" then
+				if count_reg = "00000000001" then
 					state_next <= a_video;
-				else
-					state_next <= completed_state;
 				end if;
-			end case;
-		end process;
+		end case;
+	end process;
 		
 		-- look-ahead output logic
-		process(state_next)
-		begin
-			h_sync_next <= '0';
-			blank_next <= '0';
-			completed_next <= '0';
-			column_next <= (others => '0');
-			case state_next is
-				when a_video =>
-					h_sync_next <= '0';
-					blank_next <= '0';
-					completed_next <= '0';
-					column_next <= count_reg;
-				when f_porch =>
-					h_sync_next <= '0';
-					blank_next <= '1';
-					completed_next <= '0';
-					column_next <= (others => '0');
-				when sync_pulse =>
-					h_sync_next <= '1';
-					blank_next <= '1';
-					completed_next <= '0';
-					column_next <= (others => '0');
-				when b_porch =>
-					h_sync_next <= '0';
-					blank_next <= '1';
-					completed_next <= '0';
-					column_next <= (others => '0');
-				when completed_state =>
-					h_sync_next <= '0';
-					blank_next <= '1';
-					completed_next <= '1';
-					column_next <= (others => '0');
-				end case;
-			end process;
+	process(state_next)
+	begin
+		h_sync_next <= '0';
+		blank_next <= '0';
+		completed_next <= '0';
+		column_next <= (others => '0');
+		case state_next is
+			when a_video =>
+				h_sync_next <= '0';
+				blank_next <= '0';
+				completed_next <= '0';
+				column_next <= count_reg;
+			when f_porch =>
+				h_sync_next <= '0';
+				blank_next <= '1';
+				completed_next <= '0';
+				column_next <= (others => '0');
+			when sync_pulse =>
+				h_sync_next <= '1';
+				blank_next <= '1';
+				completed_next <= '0';
+				column_next <= (others => '0');
+			when b_porch =>
+				h_sync_next <= '0';
+				blank_next <= '1';
+				completed_next <= '0';
+				column_next <= (others => '0');
+			when completed_state =>
+				h_sync_next <= '0';
+				blank_next <= '1';
+				completed_next <= '1';
+				column_next <= (others => '0');
+		end case;
+	end process;
 					
 	-- Outputs 				
 	h_sync <= h_sync_buf_reg;
@@ -166,5 +158,5 @@ begin
 	completed <= completed_buf_reg;
 	column <= column_buf_reg;
 
-end look_ahead_buffer_arch;
+end moore;
 
