@@ -33,6 +33,8 @@ entity atlys_lab_video is
     port ( 
              clk   : in  std_logic; -- 100 MHz
              reset : in  std_logic;
+				 SW6   : in  std_logic;
+				 SW7   : in  std_logic;
              tmds  : out std_logic_vector(3 downto 0);
              tmdsb : out std_logic_vector(3 downto 0)
          );
@@ -101,7 +103,9 @@ begin
 			port map(
 				row => row_sig, 
 				column => col_sig, 
-				blank => blank, 
+				blank => blank,
+				switch_6 => SW6,
+				switch_7 => SW7,
 				r => red, 
 				g => green, 
 				b => blue

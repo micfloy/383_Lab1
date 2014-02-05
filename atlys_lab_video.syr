@@ -4,13 +4,13 @@ Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.19 secs
+Total CPU time to Xst completion: 0.16 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.19 secs
+Total CPU time to Xst completion: 0.17 secs
  
 --> Reading design: atlys_lab_video.prj
 
@@ -140,6 +140,23 @@ Elaborating entity <v_sync_gen> (architecture <moore>) from library <work>.
 Elaborating entity <h_sync_gen> (architecture <moore>) from library <work>.
 
 Elaborating entity <pixel_gen> (architecture <sel_arch>) from library <work>.
+WARNING:HDLCompiler:92 - "C:\.Xilinx\VGA_Driver\pixel_gen.vhd" Line 48: blank should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\.Xilinx\VGA_Driver\pixel_gen.vhd" Line 54: column should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\.Xilinx\VGA_Driver\pixel_gen.vhd" Line 56: column should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\.Xilinx\VGA_Driver\pixel_gen.vhd" Line 58: column should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\.Xilinx\VGA_Driver\pixel_gen.vhd" Line 60: column should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\.Xilinx\VGA_Driver\pixel_gen.vhd" Line 65: column should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\.Xilinx\VGA_Driver\pixel_gen.vhd" Line 67: column should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\.Xilinx\VGA_Driver\pixel_gen.vhd" Line 69: column should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\.Xilinx\VGA_Driver\pixel_gen.vhd" Line 71: column should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\.Xilinx\VGA_Driver\pixel_gen.vhd" Line 76: column should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\.Xilinx\VGA_Driver\pixel_gen.vhd" Line 78: column should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\.Xilinx\VGA_Driver\pixel_gen.vhd" Line 80: column should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\.Xilinx\VGA_Driver\pixel_gen.vhd" Line 82: column should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\.Xilinx\VGA_Driver\pixel_gen.vhd" Line 87: column should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\.Xilinx\VGA_Driver\pixel_gen.vhd" Line 89: column should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\.Xilinx\VGA_Driver\pixel_gen.vhd" Line 91: column should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\.Xilinx\VGA_Driver\pixel_gen.vhd" Line 93: column should be on the sensitivity list of the process
 
 Elaborating entity <dvid> (architecture <Behavioral>) from library <work>.
 
@@ -151,7 +168,7 @@ Elaborating entity <TDMS_encoder> (architecture <Behavioral>) from library <work
 
 Synthesizing Unit <atlys_lab_video>.
     Related source file is "C:\.Xilinx\VGA_Driver\atlys_lab_video.vhd".
-INFO:Xst:3210 - "C:\.Xilinx\VGA_Driver\atlys_lab_video.vhd" line 86: Output port <v_completed> of the instance <vga_inst> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\.Xilinx\VGA_Driver\atlys_lab_video.vhd" line 88: Output port <v_completed> of the instance <vga_inst> is unconnected or connected to loadless signal.
     Summary:
 	no macro.
 Unit <atlys_lab_video> synthesized.
@@ -228,10 +245,40 @@ Unit <h_sync_gen> synthesized.
 
 Synthesizing Unit <pixel_gen>.
     Related source file is "C:\.Xilinx\VGA_Driver\pixel_gen.vhd".
-WARNING:Xst:647 - Input <row> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-WARNING:Xst:647 - Input <column> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:737 - Found 1-bit latch for signal <r<6>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <r<5>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <r<4>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <r<3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <r<2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <r<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <r<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <g<7>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <g<6>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <g<5>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <g<4>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <g<3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <g<2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <g<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <g<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <b<7>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <b<6>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <b<5>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <b<4>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <b<3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <b<2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <b<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <b<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <r<7>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Found 11-bit comparator greater for signal <column[10]_GND_19_o_LessThan_1_o> created at line 54
+    Found 11-bit comparator greater for signal <GND_19_o_column[10]_LessThan_17_o> created at line 65
+    Found 11-bit comparator lessequal for signal <n0021> created at line 76
+    Found 11-bit comparator lessequal for signal <n0023> created at line 76
+    Found 11-bit comparator greater for signal <GND_19_o_row[10]_LessThan_38_o> created at line 80
+    Found 11-bit comparator greater for signal <n0030> created at line 82
     Summary:
-	no macro.
+	inferred  24 Latch(s).
+	inferred   6 Comparator(s).
+	inferred 230 Multiplexer(s).
 Unit <pixel_gen> synthesized.
 
 Synthesizing Unit <dvid>.
@@ -268,12 +315,12 @@ Synthesizing Unit <TDMS_encoder>.
     Found 4-bit adder for signal <n0194> created at line 70.
     Found 4-bit adder for signal <data_word_disparity> created at line 70.
     Found 4-bit adder for signal <dc_bias[3]_data_word_disparity[3]_add_25_OUT> created at line 91.
-    Found 4-bit adder for signal <dc_bias[3]_GND_23_o_add_29_OUT> created at line 99.
-    Found 4-bit adder for signal <GND_23_o_data_word_disparity[3]_add_32_OUT> created at line 102.
-    Found 4-bit subtractor for signal <GND_23_o_GND_23_o_sub_27_OUT<3:0>> created at line 94.
-    Found 4-bit subtractor for signal <GND_23_o_GND_23_o_sub_31_OUT<3:0>> created at line 99.
+    Found 4-bit adder for signal <dc_bias[3]_GND_47_o_add_29_OUT> created at line 99.
+    Found 4-bit adder for signal <GND_47_o_data_word_disparity[3]_add_32_OUT> created at line 102.
+    Found 4-bit subtractor for signal <GND_47_o_GND_47_o_sub_27_OUT<3:0>> created at line 94.
+    Found 4-bit subtractor for signal <GND_47_o_GND_47_o_sub_31_OUT<3:0>> created at line 99.
     Found 4-bit subtractor for signal <n0203> created at line 0.
-    Found 4-bit comparator greater for signal <GND_23_o_ones[3]_LessThan_9_o> created at line 60
+    Found 4-bit comparator greater for signal <GND_47_o_ones[3]_LessThan_9_o> created at line 60
     Summary:
 	inferred  20 Adder/Subtractor(s).
 	inferred  14 D-type flip-flop(s).
@@ -295,11 +342,15 @@ Macro Statistics
  10-bit register                                       : 10
  11-bit register                                       : 4
  4-bit register                                        : 3
-# Comparators                                          : 5
+# Latches                                              : 24
+ 1-bit latch                                           : 24
+# Comparators                                          : 11
+ 11-bit comparator greater                             : 4
+ 11-bit comparator lessequal                           : 2
  3-bit comparator not equal                            : 2
  4-bit comparator greater                              : 3
-# Multiplexers                                         : 53
- 1-bit 2-to-1 multiplexer                              : 24
+# Multiplexers                                         : 283
+ 1-bit 2-to-1 multiplexer                              : 254
  10-bit 2-to-1 multiplexer                             : 12
  11-bit 2-to-1 multiplexer                             : 5
  4-bit 2-to-1 multiplexer                              : 6
@@ -343,11 +394,13 @@ Macro Statistics
  4-bit updown loadable accumulator                     : 3
 # Registers                                            : 139
  Flip-Flops                                            : 139
-# Comparators                                          : 5
+# Comparators                                          : 11
+ 11-bit comparator greater                             : 4
+ 11-bit comparator lessequal                           : 2
  3-bit comparator not equal                            : 2
  4-bit comparator greater                              : 3
-# Multiplexers                                         : 50
- 1-bit 2-to-1 multiplexer                              : 24
+# Multiplexers                                         : 280
+ 1-bit 2-to-1 multiplexer                              : 254
  10-bit 2-to-1 multiplexer                             : 12
  11-bit 2-to-1 multiplexer                             : 5
  4-bit 2-to-1 multiplexer                              : 3
@@ -393,71 +446,25 @@ Optimizing unit <v_sync_gen> ...
 
 Optimizing unit <h_sync_gen> ...
 
+Optimizing unit <pixel_gen> ...
+
 Optimizing unit <dvid> ...
 
 Optimizing unit <TDMS_encoder> ...
-WARNING:Xst:2677 - Node <vga_inst/v_sync_inst/row_buf_reg_10> of sequential type is unconnected in block <atlys_lab_video>.
-WARNING:Xst:2677 - Node <vga_inst/v_sync_inst/row_buf_reg_9> of sequential type is unconnected in block <atlys_lab_video>.
-WARNING:Xst:2677 - Node <vga_inst/v_sync_inst/row_buf_reg_8> of sequential type is unconnected in block <atlys_lab_video>.
-WARNING:Xst:2677 - Node <vga_inst/v_sync_inst/row_buf_reg_7> of sequential type is unconnected in block <atlys_lab_video>.
-WARNING:Xst:2677 - Node <vga_inst/v_sync_inst/row_buf_reg_6> of sequential type is unconnected in block <atlys_lab_video>.
-WARNING:Xst:2677 - Node <vga_inst/v_sync_inst/row_buf_reg_5> of sequential type is unconnected in block <atlys_lab_video>.
-WARNING:Xst:2677 - Node <vga_inst/v_sync_inst/row_buf_reg_4> of sequential type is unconnected in block <atlys_lab_video>.
-WARNING:Xst:2677 - Node <vga_inst/v_sync_inst/row_buf_reg_3> of sequential type is unconnected in block <atlys_lab_video>.
-WARNING:Xst:2677 - Node <vga_inst/v_sync_inst/row_buf_reg_2> of sequential type is unconnected in block <atlys_lab_video>.
-WARNING:Xst:2677 - Node <vga_inst/v_sync_inst/row_buf_reg_1> of sequential type is unconnected in block <atlys_lab_video>.
-WARNING:Xst:2677 - Node <vga_inst/v_sync_inst/row_buf_reg_0> of sequential type is unconnected in block <atlys_lab_video>.
 WARNING:Xst:2677 - Node <vga_inst/v_sync_inst/completed_buf_reg> of sequential type is unconnected in block <atlys_lab_video>.
-WARNING:Xst:2677 - Node <vga_inst/h_sync_inst/column_buf_reg_10> of sequential type is unconnected in block <atlys_lab_video>.
-WARNING:Xst:2677 - Node <vga_inst/h_sync_inst/column_buf_reg_9> of sequential type is unconnected in block <atlys_lab_video>.
-WARNING:Xst:2677 - Node <vga_inst/h_sync_inst/column_buf_reg_8> of sequential type is unconnected in block <atlys_lab_video>.
-WARNING:Xst:2677 - Node <vga_inst/h_sync_inst/column_buf_reg_7> of sequential type is unconnected in block <atlys_lab_video>.
-WARNING:Xst:2677 - Node <vga_inst/h_sync_inst/column_buf_reg_6> of sequential type is unconnected in block <atlys_lab_video>.
-WARNING:Xst:2677 - Node <vga_inst/h_sync_inst/column_buf_reg_5> of sequential type is unconnected in block <atlys_lab_video>.
-WARNING:Xst:2677 - Node <vga_inst/h_sync_inst/column_buf_reg_4> of sequential type is unconnected in block <atlys_lab_video>.
-WARNING:Xst:2677 - Node <vga_inst/h_sync_inst/column_buf_reg_3> of sequential type is unconnected in block <atlys_lab_video>.
-WARNING:Xst:2677 - Node <vga_inst/h_sync_inst/column_buf_reg_2> of sequential type is unconnected in block <atlys_lab_video>.
-WARNING:Xst:2677 - Node <vga_inst/h_sync_inst/column_buf_reg_1> of sequential type is unconnected in block <atlys_lab_video>.
-WARNING:Xst:2677 - Node <vga_inst/h_sync_inst/column_buf_reg_0> of sequential type is unconnected in block <atlys_lab_video>.
-WARNING:Xst:1426 - The value init of the FF/Latch inst_dvid/latched_green_8 hinder the constant cleaning in the block atlys_lab_video.
-   You should achieve better results by setting this init to 1.
-WARNING:Xst:1710 - FF/Latch <inst_dvid/TDMS_encoder_green/encoded_8> (without init value) has a constant value of 1 in block <atlys_lab_video>. This FF/Latch will be trimmed during the optimization process.
-INFO:Xst:2261 - The FF/Latch <inst_dvid/TDMS_encoder_blue/dc_bias_0> in Unit <atlys_lab_video> is equivalent to the following FF/Latch, which will be removed : <inst_dvid/TDMS_encoder_green/dc_bias_0> 
-INFO:Xst:2261 - The FF/Latch <inst_dvid/TDMS_encoder_blue/dc_bias_1> in Unit <atlys_lab_video> is equivalent to the following FF/Latch, which will be removed : <inst_dvid/TDMS_encoder_green/dc_bias_1> 
-INFO:Xst:2261 - The FF/Latch <inst_dvid/TDMS_encoder_blue/dc_bias_2> in Unit <atlys_lab_video> is equivalent to the following FF/Latch, which will be removed : <inst_dvid/TDMS_encoder_green/dc_bias_2> 
-INFO:Xst:2261 - The FF/Latch <inst_dvid/TDMS_encoder_blue/dc_bias_3> in Unit <atlys_lab_video> is equivalent to the following FF/Latch, which will be removed : <inst_dvid/TDMS_encoder_green/dc_bias_3> 
-INFO:Xst:2261 - The FF/Latch <inst_dvid/latched_green_7> in Unit <atlys_lab_video> is equivalent to the following 4 FFs/Latches, which will be removed : <inst_dvid/latched_green_5> <inst_dvid/latched_green_3> <inst_dvid/latched_green_1> <inst_dvid/latched_green_0> 
-INFO:Xst:2261 - The FF/Latch <inst_dvid/latched_green_9> in Unit <atlys_lab_video> is equivalent to the following 3 FFs/Latches, which will be removed : <inst_dvid/latched_green_6> <inst_dvid/latched_green_4> <inst_dvid/latched_green_2> 
-INFO:Xst:2261 - The FF/Latch <inst_dvid/latched_blue_6> in Unit <atlys_lab_video> is equivalent to the following 2 FFs/Latches, which will be removed : <inst_dvid/latched_blue_4> <inst_dvid/latched_blue_2> 
-INFO:Xst:2261 - The FF/Latch <inst_dvid/latched_blue_7> in Unit <atlys_lab_video> is equivalent to the following 4 FFs/Latches, which will be removed : <inst_dvid/latched_blue_5> <inst_dvid/latched_blue_3> <inst_dvid/latched_blue_1> <inst_dvid/latched_blue_0> 
-INFO:Xst:2261 - The FF/Latch <inst_dvid/TDMS_encoder_red/encoded_6> in Unit <atlys_lab_video> is equivalent to the following 2 FFs/Latches, which will be removed : <inst_dvid/TDMS_encoder_red/encoded_4> <inst_dvid/TDMS_encoder_red/encoded_2> 
-INFO:Xst:2261 - The FF/Latch <inst_dvid/TDMS_encoder_red/encoded_7> in Unit <atlys_lab_video> is equivalent to the following 4 FFs/Latches, which will be removed : <inst_dvid/TDMS_encoder_red/encoded_5> <inst_dvid/TDMS_encoder_red/encoded_3> <inst_dvid/TDMS_encoder_red/encoded_1> <inst_dvid/TDMS_encoder_red/encoded_0> 
-INFO:Xst:2261 - The FF/Latch <inst_dvid/TDMS_encoder_green/encoded_7> in Unit <atlys_lab_video> is equivalent to the following 4 FFs/Latches, which will be removed : <inst_dvid/TDMS_encoder_green/encoded_5> <inst_dvid/TDMS_encoder_green/encoded_3> <inst_dvid/TDMS_encoder_green/encoded_1> <inst_dvid/TDMS_encoder_green/encoded_0> 
-INFO:Xst:2261 - The FF/Latch <inst_dvid/TDMS_encoder_green/encoded_9> in Unit <atlys_lab_video> is equivalent to the following 3 FFs/Latches, which will be removed : <inst_dvid/TDMS_encoder_green/encoded_6> <inst_dvid/TDMS_encoder_green/encoded_4> <inst_dvid/TDMS_encoder_green/encoded_2> 
-INFO:Xst:2261 - The FF/Latch <inst_dvid/TDMS_encoder_red/dc_bias_3> in Unit <atlys_lab_video> is equivalent to the following FF/Latch, which will be removed : <inst_dvid/TDMS_encoder_red/dc_bias_2> 
-INFO:Xst:2261 - The FF/Latch <inst_dvid/latched_red_6> in Unit <atlys_lab_video> is equivalent to the following 2 FFs/Latches, which will be removed : <inst_dvid/latched_red_4> <inst_dvid/latched_red_2> 
-INFO:Xst:2261 - The FF/Latch <inst_dvid/latched_red_7> in Unit <atlys_lab_video> is equivalent to the following 4 FFs/Latches, which will be removed : <inst_dvid/latched_red_5> <inst_dvid/latched_red_3> <inst_dvid/latched_red_1> <inst_dvid/latched_red_0> 
-INFO:Xst:2261 - The FF/Latch <inst_dvid/TDMS_encoder_blue/encoded_6> in Unit <atlys_lab_video> is equivalent to the following 2 FFs/Latches, which will be removed : <inst_dvid/TDMS_encoder_blue/encoded_4> <inst_dvid/TDMS_encoder_blue/encoded_2> 
-INFO:Xst:2261 - The FF/Latch <inst_dvid/TDMS_encoder_blue/encoded_7> in Unit <atlys_lab_video> is equivalent to the following 4 FFs/Latches, which will be removed : <inst_dvid/TDMS_encoder_blue/encoded_5> <inst_dvid/TDMS_encoder_blue/encoded_3> <inst_dvid/TDMS_encoder_blue/encoded_1> <inst_dvid/TDMS_encoder_blue/encoded_0> 
 
 Mapping all equations...
 Building and optimizing final netlist ...
-Found area constraint ratio of 100 (+ 5) on block atlys_lab_video, actual ratio is 0.
+Found area constraint ratio of 100 (+ 5) on block atlys_lab_video, actual ratio is 1.
 
 Final Macro Processing ...
-
-Processing Unit <atlys_lab_video> :
-	Found 2-bit shift register for signal <inst_dvid/latched_red_8>.
-Unit <atlys_lab_video> processed.
 
 =========================================================================
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 98
- Flip-Flops                                            : 98
-# Shift Registers                                      : 1
- 2-bit shift register                                  : 1
+# Registers                                            : 166
+ Flip-Flops                                            : 166
 
 =========================================================================
 
@@ -480,31 +487,29 @@ Top Level Output File Name         : atlys_lab_video.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 154
+# BELS                             : 411
 #      GND                         : 1
-#      INV                         : 1
-#      LUT1                        : 10
-#      LUT2                        : 9
-#      LUT3                        : 48
-#      LUT4                        : 17
-#      LUT5                        : 11
-#      LUT6                        : 13
-#      MUXCY                       : 20
-#      MUXF7                       : 1
+#      INV                         : 2
+#      LUT1                        : 20
+#      LUT2                        : 22
+#      LUT3                        : 68
+#      LUT4                        : 47
+#      LUT5                        : 75
+#      LUT6                        : 109
+#      MUXCY                       : 30
+#      MUXF7                       : 3
 #      VCC                         : 1
-#      XORCY                       : 22
-# FlipFlops/Latches                : 103
-#      FD                          : 61
-#      FDC                         : 30
-#      FDE                         : 1
-#      FDR                         : 7
+#      XORCY                       : 33
+# FlipFlops/Latches                : 194
+#      FD                          : 113
+#      FDC                         : 41
+#      FDR                         : 12
+#      LDC                         : 24
 #      ODDR2                       : 4
-# Shift Registers                  : 1
-#      SRLC16E                     : 1
 # Clock Buffers                    : 3
 #      BUFG                        : 3
-# IO Buffers                       : 6
-#      IBUF                        : 1
+# IO Buffers                       : 8
+#      IBUF                        : 3
 #      IBUFG                       : 1
 #      OBUFDS                      : 4
 # DCMs                             : 2
@@ -517,22 +522,20 @@ Selected Device : 6slx45csg324-3
 
 
 Slice Logic Utilization: 
- Number of Slice Registers:             103  out of  54576     0%  
- Number of Slice LUTs:                  110  out of  27288     0%  
-    Number used as Logic:               109  out of  27288     0%  
-    Number used as Memory:                1  out of   6408     0%  
-       Number used as SRL:                1
+ Number of Slice Registers:             194  out of  54576     0%  
+ Number of Slice LUTs:                  343  out of  27288     1%  
+    Number used as Logic:               343  out of  27288     1%  
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:    125
-   Number with an unused Flip Flop:      22  out of    125    17%  
-   Number with an unused LUT:            15  out of    125    12%  
-   Number of fully used LUT-FF pairs:    88  out of    125    70%  
-   Number of unique control sets:         5
+ Number of LUT Flip Flop pairs used:    369
+   Number with an unused Flip Flop:     175  out of    369    47%  
+   Number with an unused LUT:            26  out of    369     7%  
+   Number of fully used LUT-FF pairs:   168  out of    369    45%  
+   Number of unique control sets:         7
 
 IO Utilization: 
- Number of IOs:                          10
- Number of bonded IOBs:                  10  out of    218     4%  
+ Number of IOs:                          12
+ Number of bonded IOBs:                  12  out of    218     5%  
 
 Specific Feature Utilization:
  Number of BUFG/BUFGCTRLs:                3  out of     16    18%  
@@ -555,13 +558,20 @@ NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
 
 Clock Information:
 ------------------
------------------------------------+------------------------+-------+
-Clock Signal                       | Clock buffer(FF name)  | Load  |
------------------------------------+------------------------+-------+
-clk                                | DCM_SP:CLKFX           | 60    |
-clk                                | DCM_SP:CLKFX           | 44    |
-clk                                | DCM_SP:CLKFX180        | 4     |
------------------------------------+------------------------+-------+
+-----------------------------------------------------------------------------------------------+------------------------+-------+
+Clock Signal                                                                                   | Clock buffer(FF name)  | Load  |
+-----------------------------------------------------------------------------------------------+------------------------+-------+
+clk                                                                                            | DCM_SP:CLKFX           | 126   |
+pixel_inst/column[10]_column[10]_MUX_153_o(pixel_inst/Mmux_column[10]_column[10]_MUX_153_o11:O)| NONE(*)(pixel_inst/g_0)| 8     |
+pixel_inst/column[10]_column[10]_MUX_325_o(pixel_inst/Mmux_column[10]_column[10]_MUX_325_o11:O)| NONE(*)(pixel_inst/b_0)| 8     |
+pixel_inst/column[10]_column[10]_MUX_54_o(pixel_inst/Mmux_column[10]_column[10]_MUX_54_o11:O)  | NONE(*)(pixel_inst/r_7)| 8     |
+clk                                                                                            | DCM_SP:CLKFX           | 44    |
+clk                                                                                            | DCM_SP:CLKFX180        | 4     |
+-----------------------------------------------------------------------------------------------+------------------------+-------+
+(*) These 3 clock signal(s) are generated by combinatorial logic,
+and XST is not able to identify which are the primary clock signals.
+Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
 
 Asynchronous Control Signals Information:
 ----------------------------------------
@@ -572,7 +582,7 @@ Timing Summary:
 Speed Grade: -3
 
    Minimum period: 4.959ns (Maximum Frequency: 201.671MHz)
-   Minimum input arrival time before clock: 2.915ns
+   Minimum input arrival time before clock: 3.950ns
    Maximum output required time after clock: No path found
    Maximum combinational path delay: No path found
 
@@ -583,7 +593,7 @@ All values displayed in nanoseconds (ns)
 =========================================================================
 Timing constraint: Default period analysis for Clock 'clk'
   Clock period: 4.959ns (frequency: 201.671MHz)
-  Total number of paths / destination ports: 5959 / 114
+  Total number of paths / destination ports: 8751 / 186
 -------------------------------------------------------------------------
 Delay:               3.967ns (Levels of Logic = 3)
   Source:            inst_dvid/shift_clock_9 (FF)
@@ -596,19 +606,85 @@ Delay:               3.967ns (Levels of Logic = 3)
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
      FD:C->Q               2   0.447   0.961  inst_dvid/shift_clock_9 (inst_dvid/shift_clock_9)
-     LUT5:I0->O            1   0.203   0.580  inst_dvid/GND_20_o_shift_clock[9]_equal_5_o<9>_SW0 (N6)
-     LUT6:I5->O           30   0.205   1.264  inst_dvid/GND_20_o_shift_clock[9]_equal_5_o<9> (inst_dvid/GND_20_o_shift_clock[9]_equal_5_o)
-     LUT3:I2->O            1   0.205   0.000  inst_dvid/Mmux_GND_20_o_latched_red[9]_mux_5_OUT11 (inst_dvid/GND_20_o_latched_red[9]_mux_5_OUT<0>)
+     LUT5:I0->O            1   0.203   0.580  inst_dvid/GND_44_o_shift_clock[9]_equal_5_o<9>_SW0 (N18)
+     LUT6:I5->O           30   0.205   1.264  inst_dvid/GND_44_o_shift_clock[9]_equal_5_o<9> (inst_dvid/GND_44_o_shift_clock[9]_equal_5_o)
+     LUT3:I2->O            1   0.205   0.000  inst_dvid/Mmux_GND_44_o_latched_red[9]_mux_5_OUT11 (inst_dvid/GND_44_o_latched_red[9]_mux_5_OUT<0>)
      FD:D                      0.102          inst_dvid/shift_red_0
     ----------------------------------------
     Total                      3.967ns (1.162ns logic, 2.805ns route)
                                        (29.3% logic, 70.7% route)
 
 =========================================================================
-Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
-  Total number of paths / destination ports: 30 / 30
+Timing constraint: Default period analysis for Clock 'pixel_inst/column[10]_column[10]_MUX_153_o'
+  Clock period: 2.011ns (frequency: 497.315MHz)
+  Total number of paths / destination ports: 8 / 8
 -------------------------------------------------------------------------
-Offset:              2.915ns (Levels of Logic = 1)
+Delay:               2.011ns (Levels of Logic = 1)
+  Source:            pixel_inst/g_2 (LATCH)
+  Destination:       pixel_inst/g_2 (LATCH)
+  Source Clock:      pixel_inst/column[10]_column[10]_MUX_153_o falling
+  Destination Clock: pixel_inst/column[10]_column[10]_MUX_153_o falling
+
+  Data Path: pixel_inst/g_2 to pixel_inst/g_2
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDC:G->Q             12   0.498   1.273  pixel_inst/g_2 (pixel_inst/g_2)
+     LUT6:I0->O            1   0.203   0.000  pixel_inst/Mmux_g[7]_g[7]_MUX_258_o21 (pixel_inst/g[7]_g[7]_MUX_258_o)
+     LDC:D                     0.037          pixel_inst/g_2
+    ----------------------------------------
+    Total                      2.011ns (0.738ns logic, 1.273ns route)
+                                       (36.7% logic, 63.3% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'pixel_inst/column[10]_column[10]_MUX_325_o'
+  Clock period: 1.824ns (frequency: 548.276MHz)
+  Total number of paths / destination ports: 8 / 8
+-------------------------------------------------------------------------
+Delay:               1.824ns (Levels of Logic = 1)
+  Source:            pixel_inst/b_0 (LATCH)
+  Destination:       pixel_inst/b_0 (LATCH)
+  Source Clock:      pixel_inst/column[10]_column[10]_MUX_325_o falling
+  Destination Clock: pixel_inst/column[10]_column[10]_MUX_325_o falling
+
+  Data Path: pixel_inst/b_0 to pixel_inst/b_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDC:G->Q             15   0.498   1.086  pixel_inst/b_0 (pixel_inst/b_0)
+     LUT2:I0->O            1   0.203   0.000  pixel_inst/Mmux_b[7]_b[7]_MUX_447_o11 (pixel_inst/b[7]_b[7]_MUX_447_o)
+     LDC:D                     0.037          pixel_inst/b_0
+    ----------------------------------------
+    Total                      1.824ns (0.738ns logic, 1.086ns route)
+                                       (40.5% logic, 59.5% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'pixel_inst/column[10]_column[10]_MUX_54_o'
+  Clock period: 1.768ns (frequency: 565.675MHz)
+  Total number of paths / destination ports: 8 / 8
+-------------------------------------------------------------------------
+Delay:               1.768ns (Levels of Logic = 1)
+  Source:            pixel_inst/r_0 (LATCH)
+  Destination:       pixel_inst/r_0 (LATCH)
+  Source Clock:      pixel_inst/column[10]_column[10]_MUX_54_o falling
+  Destination Clock: pixel_inst/column[10]_column[10]_MUX_54_o falling
+
+  Data Path: pixel_inst/r_0 to pixel_inst/r_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDC:G->Q             17   0.498   1.028  pixel_inst/r_0 (pixel_inst/r_0)
+     LUT5:I4->O            1   0.205   0.000  pixel_inst/Mmux_r[7]_r[7]_MUX_129_o11 (pixel_inst/r[7]_r[7]_MUX_129_o)
+     LDC:D                     0.037          pixel_inst/r_0
+    ----------------------------------------
+    Total                      1.768ns (0.740ns logic, 1.028ns route)
+                                       (41.9% logic, 58.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 41 / 41
+-------------------------------------------------------------------------
+Offset:              3.071ns (Levels of Logic = 1)
   Source:            reset (PAD)
   Destination:       vga_inst/v_sync_inst/state_reg_FSM_FFd1 (FF)
   Destination Clock: clk rising 0.3X
@@ -617,11 +693,73 @@ Offset:              2.915ns (Levels of Logic = 1)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O            30   1.222   1.263  reset_IBUF (reset_IBUF)
+     IBUF:I->O            41   1.222   1.419  reset_IBUF (reset_IBUF)
      FDC:CLR                   0.430          vga_inst/v_sync_inst/count_reg_0
     ----------------------------------------
-    Total                      2.915ns (1.652ns logic, 1.263ns route)
-                                       (56.7% logic, 43.3% route)
+    Total                      3.071ns (1.652ns logic, 1.419ns route)
+                                       (53.8% logic, 46.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'pixel_inst/column[10]_column[10]_MUX_153_o'
+  Total number of paths / destination ports: 34 / 8
+-------------------------------------------------------------------------
+Offset:              3.950ns (Levels of Logic = 3)
+  Source:            SW6 (PAD)
+  Destination:       pixel_inst/g_2 (LATCH)
+  Destination Clock: pixel_inst/column[10]_column[10]_MUX_153_o falling
+
+  Data Path: SW6 to pixel_inst/g_2
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            20   1.222   1.321  SW6_IBUF (SW6_IBUF)
+     LUT4:I1->O            2   0.205   0.961  pixel_inst/Mmux_g[7]_g[7]_MUX_192_o1111 (pixel_inst/Mmux_g[7]_g[7]_MUX_192_o111)
+     LUT6:I1->O            1   0.203   0.000  pixel_inst/Mmux_g[7]_g[7]_MUX_258_o21 (pixel_inst/g[7]_g[7]_MUX_258_o)
+     LDC:D                     0.037          pixel_inst/g_2
+    ----------------------------------------
+    Total                      3.950ns (1.667ns logic, 2.283ns route)
+                                       (42.2% logic, 57.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'pixel_inst/column[10]_column[10]_MUX_325_o'
+  Total number of paths / destination ports: 16 / 8
+-------------------------------------------------------------------------
+Offset:              3.927ns (Levels of Logic = 3)
+  Source:            SW6 (PAD)
+  Destination:       pixel_inst/b_0 (LATCH)
+  Destination Clock: pixel_inst/column[10]_column[10]_MUX_325_o falling
+
+  Data Path: SW6 to pixel_inst/b_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            20   1.222   1.457  SW6_IBUF (SW6_IBUF)
+     LUT6:I0->O            8   0.203   0.803  pixel_inst/Mmux_b[7]_b[7]_MUX_321_o121 (pixel_inst/Mmux_b[7]_b[7]_MUX_321_o12)
+     LUT2:I1->O            1   0.205   0.000  pixel_inst/Mmux_b[7]_b[7]_MUX_447_o11 (pixel_inst/b[7]_b[7]_MUX_447_o)
+     LDC:D                     0.037          pixel_inst/b_0
+    ----------------------------------------
+    Total                      3.927ns (1.667ns logic, 2.260ns route)
+                                       (42.5% logic, 57.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'pixel_inst/column[10]_column[10]_MUX_54_o'
+  Total number of paths / destination ports: 16 / 8
+-------------------------------------------------------------------------
+Offset:              2.899ns (Levels of Logic = 2)
+  Source:            SW6 (PAD)
+  Destination:       pixel_inst/r_7 (LATCH)
+  Destination Clock: pixel_inst/column[10]_column[10]_MUX_54_o falling
+
+  Data Path: SW6 to pixel_inst/r_7
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            20   1.222   1.437  SW6_IBUF (SW6_IBUF)
+     LUT5:I0->O            1   0.203   0.000  pixel_inst/Mmux_r[7]_r[7]_MUX_52_o11 (pixel_inst/r[7]_r[7]_MUX_52_o)
+     LDC:D                     0.037          pixel_inst/r_7
+    ----------------------------------------
+    Total                      2.899ns (1.462ns logic, 1.437ns route)
+                                       (50.4% logic, 49.6% route)
 
 =========================================================================
 
@@ -629,24 +767,54 @@ Cross Clock Domains Report:
 --------------------------
 
 Clock to Setup on destination clock clk
----------------+---------+---------+---------+---------+
-               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
-Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
----------------+---------+---------+---------+---------+
-clk            |    6.896|         |         |         |
----------------+---------+---------+---------+---------+
+------------------------------------------+---------+---------+---------+---------+
+                                          | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                              |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+------------------------------------------+---------+---------+---------+---------+
+clk                                       |    7.717|         |         |         |
+pixel_inst/column[10]_column[10]_MUX_153_o|         |   13.538|         |         |
+pixel_inst/column[10]_column[10]_MUX_325_o|         |   13.734|         |         |
+pixel_inst/column[10]_column[10]_MUX_54_o |         |   14.192|         |         |
+------------------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock pixel_inst/column[10]_column[10]_MUX_153_o
+------------------------------------------+---------+---------+---------+---------+
+                                          | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                              |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+------------------------------------------+---------+---------+---------+---------+
+clk                                       |         |         |    5.340|         |
+pixel_inst/column[10]_column[10]_MUX_153_o|         |         |    2.011|         |
+------------------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock pixel_inst/column[10]_column[10]_MUX_325_o
+------------------------------------------+---------+---------+---------+---------+
+                                          | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                              |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+------------------------------------------+---------+---------+---------+---------+
+clk                                       |         |         |    5.166|         |
+pixel_inst/column[10]_column[10]_MUX_325_o|         |         |    1.824|         |
+------------------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock pixel_inst/column[10]_column[10]_MUX_54_o
+-----------------------------------------+---------+---------+---------+---------+
+                                         | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                             |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+-----------------------------------------+---------+---------+---------+---------+
+clk                                      |         |         |    4.176|         |
+pixel_inst/column[10]_column[10]_MUX_54_o|         |         |    1.768|         |
+-----------------------------------------+---------+---------+---------+---------+
 
 =========================================================================
 
 
-Total REAL time to Xst completion: 8.00 secs
-Total CPU time to Xst completion: 8.10 secs
+Total REAL time to Xst completion: 10.00 secs
+Total CPU time to Xst completion: 10.00 secs
  
 --> 
 
-Total memory usage is 271304 kilobytes
+Total memory usage is 272456 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :   27 (   0 filtered)
-Number of infos    :   21 (   0 filtered)
+Number of warnings :   42 (   0 filtered)
+Number of infos    :    5 (   0 filtered)
 

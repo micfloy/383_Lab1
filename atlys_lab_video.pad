@@ -1,7 +1,7 @@
 Release 14.4 - par P.49d (nt64)
 Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
 
-Tue Feb 04 17:06:44 2014
+Tue Feb 04 17:49:58 2014
 
 
 # NOTE: This file is designed to be imported into a spreadsheet program
@@ -322,7 +322,7 @@ U12|||GND||||||||||||
 U13||IOBM|IO_L14P_D11_2|UNUSED||2|||||||||
 U14|||VCCO_2|||2|||||any******||||
 U15||IOBM|IO_L5P_2|UNUSED||2|||||||||
-U16||IOBM|IO_L2P_CMPCLK_2|UNUSED||2|||||||||
+U16|SW6|IOB|IO_L2P_CMPCLK_2|INPUT|LVCMOS25*|2||||NONE||UNLOCATED|NO|NONE|
 U17||IOBM|IO_L52P_M1DQ14_1|UNUSED||1|||||||||
 U18||IOBS|IO_L52N_M1DQ15_1|UNUSED||1|||||||||
 V1|||GND||||||||||||
@@ -340,7 +340,7 @@ V12||IOBS|IO_L19N_2|UNUSED||2|||||||||
 V13||IOBS|IO_L14N_D12_2|UNUSED||2|||||||||
 V14||IOBS|IO_L12N_D2_MISO3_2|UNUSED||2|||||||||
 V15||IOBS|IO_L5N_2|UNUSED||2|||||||||
-V16||IOBS|IO_L2N_CMPMOSI_2|UNUSED||2|||||||||
+V16|SW7|IOB|IO_L2N_CMPMOSI_2|INPUT|LVCMOS25*|2||||NONE||UNLOCATED|NO|NONE|
 V17|||DONE_2||||||||||||
 V18|||GND||||||||||||
 

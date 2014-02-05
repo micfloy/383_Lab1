@@ -1,9 +1,9 @@
 set -tmpdir "C:/.Xilinx/VGA_Driver/xst/projnav.tmp"
 set -xsthdpdir "C:/.Xilinx/VGA_Driver/xst"
 run -compileonly yes
--p xc6slx45-3-fgg484
+-p xc6slx45-3-csg324
 -top pixel_gen
--opt_mode Speed
+-opt_mode Area
 -opt_level 1
 -power NO
 -iuc NO
