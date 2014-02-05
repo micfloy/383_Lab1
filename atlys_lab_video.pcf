@@ -1,0 +1,19 @@
+//! **************************************************************************
+// Written by: Map P.49d on Tue Feb 04 17:06:26 2014
+//! **************************************************************************
+
+SCHEMATIC START;
+CONFIG VCCAUX = "3.3";
+COMP "clk" LOCATE = SITE "L15" LEVEL 1;
+COMP "tmdsb<0>" LOCATE = SITE "C8" LEVEL 1;
+COMP "tmdsb<1>" LOCATE = SITE "A7" LEVEL 1;
+COMP "tmdsb<2>" LOCATE = SITE "A8" LEVEL 1;
+COMP "tmdsb<3>" LOCATE = SITE "A6" LEVEL 1;
+COMP "reset" LOCATE = SITE "F5" LEVEL 1;
+COMP "tmds<0>" LOCATE = SITE "D8" LEVEL 1;
+COMP "tmds<1>" LOCATE = SITE "C7" LEVEL 1;
+COMP "tmds<2>" LOCATE = SITE "B8" LEVEL 1;
+COMP "tmds<3>" LOCATE = SITE "B6" LEVEL 1;
+NET "clk_IBUFG" PERIOD = 10 ns HIGH 50%;
+SCHEMATIC END;
+

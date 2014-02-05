@@ -7,10 +7,5 @@ Time resolution is 1 ps
 # wave add /
 # run 1000 ns
 Simulator is doing circuit initialization process.
-at 0 ps, Instance /v_sync_testbench/uut/ : Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
 Finished circuit initialization process.
-# run 1.00us
-# run 1.00us
-# run 1.00us
-# run 1.00us
-# run 1.00us
+# run 30ms

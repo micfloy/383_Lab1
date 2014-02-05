@@ -44,7 +44,7 @@ end vga_sync;
 architecture moore of vga_sync is
 
 signal h_sync_con, h_comp_con, v_sync_con, v_comp_con, h_blank, v_blank : std_logic;
-signal row_con, column_con : unsigned;
+signal row_con, column_con : unsigned(10 downto 0);
 
 begin
 

@@ -1,9 +1,9 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2014-02-04T09:37:11</DateModified>
+  <DateModified>2014-02-04T17:05:55</DateModified>
   <ModuleName>atlys_lab_video</ModuleName>
-  <SummaryTimeStamp>Unknown</SummaryTimeStamp>
+  <SummaryTimeStamp>2014-02-04T17:05:26</SummaryTimeStamp>
   <SavedFilePath>C:/.Xilinx/VGA_Driver/iseconfig/atlys_lab_video.xreport</SavedFilePath>
   <ImplementationReportsDirectory>C:/.Xilinx/VGA_Driver\</ImplementationReportsDirectory>
   <DateInitialized>2014-01-30T21:12:31</DateInitialized>

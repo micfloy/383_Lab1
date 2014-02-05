@@ -88,6 +88,13 @@ BEGIN
 		wait for clk_period/2;
    end process;
  
+	process
+	begin
+		h_completed <= '0';
+		wait for 799 * clk_period;
+		h_completed <= '1';
+		wait for clk_period;
+	end process;
 
    -- Stimulus process
    stim_proc: process
@@ -97,7 +104,7 @@ BEGIN
       wait for 100 ns;
 			
 		reset <= '0';
-		h_completed <= '1';
+		--h_completed <= '1';
 
       wait for clk_period*10;
 

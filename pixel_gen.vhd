@@ -22,7 +22,7 @@ use IEEE.STD_LOGIC_1164.ALL;
 
 -- Uncomment the following library declaration if using
 -- arithmetic functions with Signed or Unsigned values
---use IEEE.NUMERIC_STD.ALL;
+use IEEE.NUMERIC_STD.ALL;
 
 -- Uncomment the following library declaration if instantiating
 -- any Xilinx primitives in this code.
@@ -38,10 +38,27 @@ entity pixel_gen is
            b        : out std_logic_vector(7 downto 0));
 end pixel_gen;
 
-architecture Behavioral of pixel_gen is
+architecture sel_arch of pixel_gen is
 
 begin
+	
+		r <= (others => '0') when (blank = '1') else
+			  (others => '1') when (column < 215) and (row < 300) else
+			  (others => '0');
+			  
+		g <= (others => '0') when (blank = '1') else
+			  (others => '1') when ((column > 215) and (column < 430) and (row < 300)) or (row > 300) else
+			  (others => '0');
+			  
+	   b <= (others => '0') when (blank = '1') else
+			  (others => '1') when ((column > 430) and (row < 300)) or (row > 300) else
+			  (others => '0');
 
+--r <= (others => '0') when blank = '1' else
+--		(others => '1');
+--
+--g <= (others => '0');
+--
+--b <= (others => '0');
 
-end Behavioral;
-
+end sel_arch;

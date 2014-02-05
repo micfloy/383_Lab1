@@ -95,7 +95,7 @@ begin
 	process(state_reg, count_reg)
 	begin
 	
-		--state_next <= state_reg;
+		state_next <= state_reg;
 		
 		case state_reg is
 			when a_video =>

@@ -87,30 +87,32 @@ begin
 						count_reg;
 	
 	-- next-state logic
-	process(state_reg, count_reg)
+	process(state_reg, count_reg, h_completed)
 	begin
 		state_next <= state_reg;
 		
-		case state_reg is
-			when a_video =>
-				if count_reg = (480-1) then
-					state_next <= f_porch;
-				end if;
-			when f_porch =>
-				if count_reg = (10-1) then
-					state_next <= sync_pulse;
-				end if;
-			when sync_pulse =>
-				if count_reg = (2-1) then
-					state_next <= b_porch;
-				end if;
-			when b_porch =>
-				if count_reg = (32-1) then
-					state_next <= completed_state;
-				end if;
-			when completed_state =>
-					state_next <= a_video;
-		end case;
+		if h_completed = '1' then
+			case state_reg is
+				when a_video =>
+					if count_reg = (480-1) then
+						state_next <= f_porch;
+					end if;
+				when f_porch =>
+					if count_reg = (10-1) then
+						state_next <= sync_pulse;
+					end if;
+				when sync_pulse =>
+					if count_reg = (2-1) then
+						state_next <= b_porch;
+					end if;
+				when b_porch =>
+					if count_reg = (32-1) then
+						state_next <= completed_state;
+					end if;
+				when completed_state =>
+						state_next <= a_video;
+			end case;
+		end if;
 	end process;
 		
 		-- look-ahead output logic

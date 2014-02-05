@@ -22,12 +22,12 @@ use IEEE.STD_LOGIC_1164.ALL;
 
 -- Uncomment the following library declaration if using
 -- arithmetic functions with Signed or Unsigned values
---use IEEE.NUMERIC_STD.ALL;
+use IEEE.NUMERIC_STD.ALL;
 
 -- Uncomment the following library declaration if instantiating
 -- any Xilinx primitives in this code.
---library UNISIM;
---use UNISIM.VComponents.all;
+library UNISIM;
+use UNISIM.VComponents.all;
 
 entity atlys_lab_video is
     port ( 
@@ -44,6 +44,15 @@ end atlys_lab_video;
 
 architecture bentley of atlys_lab_video is
     -- TODO: Signals, as needed
+	 signal serialize_clk, serialize_clk_n : std_logic;
+	 
+	 signal pixel_clk, h_sync, v_sync, blank : std_logic;
+	 
+	 signal red_s, green_s, blue_s, clock_s : std_logic;
+	 
+	 signal red, green, blue : std_logic_vector(7 downto 0);
+	 
+	 signal row_sig, col_sig : unsigned(10 downto 0);
 begin
 
     -- Clock divider - creates pixel clock from 100MHz clock
@@ -57,7 +66,7 @@ begin
                 clkin => clk,
                 rst   => reset,
                 clkfx => pixel_clk
-            );
+             );
 
     -- Clock divider - creates HDMI serial output clock
     inst_DCM_serialize: DCM
@@ -74,7 +83,29 @@ begin
             );
 
     -- TODO: VGA component instantiation
+	 vga_inst: entity work.vga_sync(moore)
+			port map(
+				clk  => pixel_clk,
+				reset => reset,
+				h_sync => h_sync,
+				v_sync => v_sync,
+				v_completed => open,
+				blank => blank,
+				row => row_sig,
+				column => col_sig
+		   );
+	 
     -- TODO: Pixel generator component instantiation
+	 
+	 pixel_inst: entity work.pixel_gen(sel_arch)
+			port map(
+				row => row_sig, 
+				column => col_sig, 
+				blank => blank, 
+				r => red, 
+				g => green, 
+				b => blue
+			);
 
     -- Convert VGA signals to HDMI (actually, DVID ... but close enough)
     inst_dvid: entity work.dvid
@@ -106,4 +137,3 @@ begin
         ( O  => TMDS(3), OB => TMDSB(3), I  => clock_s );
 
 end bentley;
-
