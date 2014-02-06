@@ -18,7 +18,7 @@ The approach to this lab was to begin with the smallest component and then insta
 
 ## State Diagram
 
-![Wow! Such state](https://raw.github.com/micfloy/383_Lab1/master/state_diagram.png)
+![Wow! Such state](https://raw.github.com/micfloy/383_Lab1/master/h_sync_state_diagram.png)
 
 This state diagram was used to create an entity for the `h_sync_gen`
 
