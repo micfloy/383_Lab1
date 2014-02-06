@@ -11,11 +11,11 @@ Captain Branchflower checked off Required functionality 2/4/14
 # Implementation
 
 ## Block Diagram
-![alt text](https://.github.com/micfloy/383_Lab1/master/block_diagram.PNG "Conceptual Diagram")
+![alt text](https://raw2.github.com/micfloy/383_Lab1/master/block_diagram.PNG "Conceptual Diagram")
 
 The approach to this lab was to begin with the smallest component and then instantiate it in the next higher-level module.  The `h_sync_gen` module was created first.  It followed a simple moore design, using a look-ahead output buffer to ensure accurate timing.
 
-![Wow! Such state](https://.github.com/micfloy/383_Lab1/master/block_diagram.PNG "State Diagram")
+![Wow! Such state](https://raw2.github.com/micfloy/383_Lab1/master/state_diagram.PNG "State Diagram")
 
 
 ## State Diagram
@@ -40,7 +40,7 @@ The look-ahead output buffer architecture, used for both `h_sync_gen` and `v_syn
   - Followed by the counter logic
 - Output Buffer
 - Next-state Logic
-- Look-ahead Logic
+- Look-ahead Output Logic
 - Outputs
 
 This basic design ensured that there was no glitching in the code and that all output assignments would be made at the same time when triggered by the rising edge of the clock.
