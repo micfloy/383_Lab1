@@ -11,15 +11,16 @@ Captain Branchflower checked off Required functionality 2/4/14
 # Implementation
 
 ## Block Diagram
-![alt text](https://raw.github.com/micfloy/383_Lab1/master/block_diagram.PNG "Conceptual Diagram")
+![alt text](https://raw.github.com/micfloy/383_Lab1/master/block_diagram.png)
 
 The approach to this lab was to begin with the smallest component and then instantiate it in the next higher-level module.  The `h_sync_gen` module was created first.  It followed a simple moore design, using a look-ahead output buffer to ensure accurate timing.
 
-![Wow! Such state](https://raw.github.com/micfloy/383_Lab1/master/state_diagram.PNG "State Diagram")
-
 
 ## State Diagram
-This state diagram was then used to create an entity for the `h_sync_gen`
+
+![Wow! Such state](https://raw.github.com/micfloy/383_Lab1/master/state_diagram.png)
+
+This state diagram was used to create an entity for the `h_sync_gen`
 
 ```VHDL
 entity h_sync_gen is
