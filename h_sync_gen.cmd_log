@@ -1,7 +1,0 @@
-vhdtdtfi -prj VGA_Driver -o C:/.Xilinx/VGA_Driver/h_sync_gen.tfi -module h_sync_gen -template C:/Xilinx/14.4/ISE_DS/ISE//data/tfi.tft -deleteonerror -lib work h_sync_gen.vhd 
-vhdtdtfi -prj VGA_Driver -o C:/.Xilinx/VGA_Driver/h_sync_gen.tfi -module h_sync_gen -template C:/Xilinx/14.4/ISE_DS/ISE//data/tfi.tft -deleteonerror -lib work h_sync_gen.vhd 
-vhdtdtfi -prj VGA_Driver -o C:/.Xilinx/VGA_Driver/h_sync_gen.tfi -module h_sync_gen -template C:/Xilinx/14.4/ISE_DS/ISE//data/tfi.tft -deleteonerror -lib work h_sync_gen.vhd 
-vhdtdtfi -prj VGA_Driver -o C:/.Xilinx/VGA_Driver/h_sync_gen.tfi -module h_sync_gen -template C:/Xilinx/14.4/ISE_DS/ISE//data/tfi.tft -deleteonerror -lib work h_sync_gen.vhd 
-vhdtdtfi -prj VGA_Driver -o C:/.Xilinx/VGA_Driver/h_sync_gen.tfi -module h_sync_gen -template C:/Xilinx/14.4/ISE_DS/ISE//data/tfi.tft -deleteonerror -lib work h_sync_gen.vhd 
-vhdtdtfi -prj VGA_Driver -o C:/.Xilinx/VGA_Driver/h_sync_gen.tfi -module h_sync_gen -template C:/Xilinx/14.4/ISE_DS/ISE//data/tfi.tft -deleteonerror -lib work h_sync_gen.vhd 
-vhdtdtfi -prj VGA_Driver -o C:/.Xilinx/VGA_Driver/h_sync_gen.tfi -module h_sync_gen -template C:/Xilinx/14.4/ISE_DS/ISE//data/tfi.tft -deleteonerror -lib work h_sync_gen.vhd 
