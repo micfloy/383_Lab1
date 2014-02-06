@@ -61,7 +61,9 @@ entity v_sync_gen is
 end v_sync_gen;
 ```
 
-##Important note All memory was created using this same basic design:
+##Important note
+
+All memory was created using this same basic design:
 
 ```VHD
 process(clk,reset)
