@@ -1,7 +1,0 @@
-vhdl work "v_sync_gen.vhd"
-vhdl work "TDMS_encoder.vhd"
-vhdl work "h_sync_gen.vhd"
-vhdl work "vga_sync.vhd"
-vhdl work "pixel_gen.vhd"
-vhdl work "dvid.vhd"
-vhdl work "atlys_lab_video.vhd"
