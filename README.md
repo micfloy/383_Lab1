@@ -46,7 +46,9 @@ The look-ahead output buffer architecture, used for both `h_sync_gen` and `v_syn
 
 This basic design ensured that there was no glitching in the code and that all output assignments would be made at the same time when triggered by the rising edge of the clock.
 
-`v_syng_gen` followed an almost identitcal design with slightly different inputs because it also required information about `h_sync_gen`.  Specifically, it had to know when `h_sync_gen` had completed every column in a row and was ready to move on.  Thus the entity declaration was slgihtly different.
+## `v_sync_gen`
+
+`v_sync_gen` followed an almost identitcal design with slightly different inputs because it also required information about `h_sync_gen`.  Specifically, it had to know when `h_sync_gen` had completed every column in a row and was ready to move on.  Thus the entity declaration was slgihtly different.
 
 ```VHDL
 entity v_sync_gen is
@@ -80,9 +82,13 @@ Keeping all memory in this format and not combining more elements than necessary
 
 The whole code may be referenced to see specific differences, but the overall architecture was the same as `h_sync_gen`.
 
+## `vga_sync`
+
 `vga_sync` was very straightforward and was simply used to link an instantiation of `h_sync_gen` and `v_sync_gen` in order to implement them in the top-level architecture.  Specifically, it took the `h_completed` output from `h_sync_gen` and ran it to the input of `v_sync_gen`.
 
 
+
+## `pixel_gen`
 
 `pixel_gen` was quite different from the other components.  It required the `row` and`column` outputs from `vga_sync`.  
 
@@ -121,6 +127,8 @@ begin
 					g <= "10001000";
 				end if;
 ```
+
+## `atlys_lab_video`
 
 Finally, `vga_sync` and `pixel_gen` were implemented in the top-level design, `atlys_lab_video`.  This was also connected to a converter component that was not part of the lab, but was provided, along with the insantiation instructions.
 
