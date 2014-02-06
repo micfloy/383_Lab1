@@ -11,11 +11,11 @@ Captain Branchflower checked off Required functionality 2/4/14
 # Implementation
 
 ## Block Diagram
-![alt text](https://raw2.github.com/micfloy/383_Lab1/master/block_diagram.PNG "Conceptual Diagram")
+![alt text](https://raw.github.com/micfloy/383_Lab1/master/block_diagram.PNG "Conceptual Diagram")
 
 The approach to this lab was to begin with the smallest component and then instantiate it in the next higher-level module.  The `h_sync_gen` module was created first.  It followed a simple moore design, using a look-ahead output buffer to ensure accurate timing.
 
-![Wow! Such state](https://raw2.github.com/micfloy/383_Lab1/master/state_diagram.PNG "State Diagram")
+![Wow! Such state](https://raw.github.com/micfloy/383_Lab1/master/state_diagram.PNG "State Diagram")
 
 
 ## State Diagram
