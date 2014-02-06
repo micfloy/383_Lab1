@@ -219,7 +219,7 @@ Below this went the code already provided.
   - Syntax errors and mistypings cost me a lot of time and forced me to be meticulous when writing large sections of code at once.
   - Another error I encountered was setting `column_next` to `count_reg` instead of `count_next`.  This was very hard to diagnose until I compared my code with Captain Branchflower's and saw the discrepancy.
 
-- `v_sync_gen`
+-`v_sync_gen`
   - Primary problem was correctly implementing the `h_completed` input into the basic format of my `h_sync_gen` architecture.  Captain Branchflower showed me that it should go in an if statement before my next-state logic case assignments, rather than in an if statement inside of my active_video state.
 
 ```VHD
@@ -240,12 +240,12 @@ process(state_reg, count_reg, h_completed)
 				when sync_pulse =>
 ...
 ```
-- `vga_sync`
+-`vga_sync`
   - There were very few problems with `vga_sync`.  The only semi-confusing thing that had to be added was assigning the `blank` output to `h_blank or v_blank`.
 
-- `pixel_gen`
+-`pixel_gen`
   - The primary problem in `pixel_gen` was an error in the way I assigned `r, g, b`.  I first tried to use a combination of if statements and combinational logic.  This resulted in an error, telling me that VHDL could only do this in the 2008 edition, not the one we were using.  Captain Branchflower suggested that I fix this by instead using nested if statements inside of a process.  This worked perfectly.
-- `atlys_lab_video`
+-`atlys_lab_video`
   - The first problem I encountered was that I had not created enough signals.  The primary work needed in this component was creating all of the signals to connect `vga_sync` with `pixel_gen` and the dvid converter.
   - After my code synthesized correctly, I tried to run it on the FPGA and it did nothing.  Captain Branchflower helped me troubleshoot a few possibilities, such as changing the optimization from speed to area.  Eventually he figured out that the problem was my `constrains.ucf` file had not saved when I tried to create it.  By adding this the code then functioned properly.
 
