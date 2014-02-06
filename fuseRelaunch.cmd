@@ -1,1 +1,0 @@
--intstyle "ise" -incremental -lib "secureip" -o "C:/.Xilinx/VGA_Driver/v_sync_testbench_isim_beh.exe" -prj "C:/.Xilinx/VGA_Driver/v_sync_testbench_beh.prj" "work.v_sync_testbench" 

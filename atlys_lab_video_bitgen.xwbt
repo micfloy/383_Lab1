@@ -1,8 +1,0 @@
-INTSTYLE=ise
-INFILE=C:\.Xilinx\VGA_Driver\atlys_lab_video.ncd
-OUTFILE=C:\.Xilinx\VGA_Driver\atlys_lab_video.bit
-FAMILY=Spartan6
-PART=xc6slx45-3csg324
-WORKINGDIR=C:\.Xilinx\VGA_Driver
-LICENSE=ISE
-USER_INFO=209468342_209874070_210560905_463

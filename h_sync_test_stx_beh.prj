@@ -1,2 +1,0 @@
-vhdl isim_temp "h_sync_gen.vhd"
-vhdl isim_temp "h_sync_test.vhd"
